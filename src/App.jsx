@@ -48,6 +48,9 @@ const TechNexusLanding = () => {
       ],
     },
   };
+  const handleRedirect = () => {
+    window.location.href = "https://www.b1tcoin.ai/";
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a192f] via-[#112240] to-[#0a192f] text-white relative overflow-hidden">
@@ -115,7 +118,10 @@ const TechNexusLanding = () => {
             <Layers className="w-12 h-12 text-purple-400 animate-bounce" />
           </div>
 
-          <button className="bg-gradient-to-r from-emerald-600 to-cyan-600 text-white font-bold py-4 px-8 rounded-full text-xl flex items-center justify-center mx-auto space-x-3 group hover:from-emerald-700 hover:to-cyan-700 transition-all">
+          <button
+            class="bg-gradient-to-r from-emerald-600 to-cyan-600 text-white font-bold py-4 px-8 rounded-full text-xl flex items-center justify-center mx-auto space-x-3 group hover:from-emerald-700 hover:to-cyan-700 transition-all"
+            onClick={handleRedirect}
+          >
             <span>Enter Technological Realm</span>
             <Zap className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </button>
